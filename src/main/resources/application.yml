@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: ledgerline
+  config:
+    import: optional:file:.env[.properties]
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5433/ledgerline}
+    username: ${DB_USER:ledgerline}
+    password: ${DB_PASSWORD:}
+  flyway:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
