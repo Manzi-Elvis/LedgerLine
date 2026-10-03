@@ -4,7 +4,7 @@ spring:
   config:
     import: optional:file:.env[.properties]
   datasource:
-    url: ${DB_URL:jdbc:postgresql://localhost:5433/ledgerline}
+    url: ${DB_URL:jdbc:postgresql://localhost:5434/ledgerline}
     username: ${DB_USER:ledgerline}
     password: ${DB_PASSWORD:}
   flyway:
